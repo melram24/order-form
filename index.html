@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Billy Bob's Burgers and Subs</title>
+
+    <meta name="author" content="mrmrs">
+    <meta name="description" content="Common HTML patterns">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+<style>
+    .main{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        color: gray;
+    }
+
+</style>
+<div class="container-fluid main">
+
+    <form method="POST">
+
+        <div>
+            <h1>Billy Bob's Burgers and Subs</h1>
+            <h5><em>Food With Attitude</em></h5>
+
+            <br>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="name" required>
+
+            <br><br>
+
+            <label for="order">Order:</label>
+            <input type="radio" name="order" value="burger">
+            <label for="burger">Burger</label>
+            <input type="radio" name="order" value="sub">
+            <label for="sub">Sub</label>
+
+            <br><br>
+
+            <label for="protein">Protein: </label>
+            <select name="protein" id="protein" >
+                <option value="chicken">Chicken</option>
+                <option value="ham">Ham</option>
+                <option value="beef">Beef</option>
+                <option value="turkey">Turkey</option>
+            </select>
+
+            <br><br>
+
+            <label for="toppings">Toppings:</label>
+            <select id="toppings" name="toppings" multiple>
+                <option value="lettuce">Lettuce</option>
+                <option value="tomato">Tomato</option>
+                <option value="onion">Onion</option>
+                <option value="pickles">Pickles</option>
+            </select>
+            <p>(Hint: Hold Ctrl or Command to select more than one.)</p>
+
+
+            <label for="cheese">Cheese:</label>
+            <input type="checkbox" id="pepperjack" name="cheese" value="pepperjack">
+            <label for="pepperjack">Pepper Jack</label>
+            <input type="checkbox" id="american" name="cheese" value="american">
+            <label for="american">American</label>
+            <input type="checkbox" id="mozzarella" name="cheese" value="mozzarella">
+            <label for="mozzarella">Mozzarella </label>
+
+            <br>
+
+            <label for="sauce">Sauce:</label>
+            <input type="checkbox" id="mayo" name="sauce" value="mayo">
+            <label for="mayo">Mayo</label>
+            <input type="checkbox" id="ketchup" name="sauce" value="ketchup">
+            <label for="ketchup">Ketchup</label>
+            <input type="checkbox" id="mustard" name="sauce" value="mustard">
+            <label for="mustard">Mustard</label>
+
+            <br><br>
+
+            <p>Please input email and password for future orders.</p>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="joe123@gmail.com" required>
+
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="password" required>
+
+            <br><br>
+
+            <label for="comments">Comments: </label>
+            <textarea name="comments" id="comments" rows="4" cols="50"></textarea>
+            <br>
+        </div>
+        <div>
+            <br><br>
+            <input class="btn btn-primary" type="submit" name="submit" value="Submit Order">
+            <input class="btn btn-secondary" type="reset" name="reset" value="Restart Order">
+            <br><br>
+        </div>
+
+    </form>
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/less" ></script>
+</html>
